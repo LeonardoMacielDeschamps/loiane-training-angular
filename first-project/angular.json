@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "cli": {
+    "packageManager": "pnpm"
+  },
   "newProjectRoot": "projects",
   "projects": {
-    "primeiro-projeto": {
+    "first-project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/primeiro-projeto",
+            "outputPath": "dist/first-project",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -32,12 +35,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -67,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "primeiro-projeto:build:production"
+              "buildTarget": "first-project:build:production"
             },
             "development": {
-              "buildTarget": "primeiro-projeto:build:development"
+              "buildTarget": "first-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "primeiro-projeto:build"
+            "buildTarget": "first-project:build"
           }
         },
         "test": {
