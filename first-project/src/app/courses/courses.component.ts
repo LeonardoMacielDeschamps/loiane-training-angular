@@ -5,4 +5,7 @@ import { Component } from '@angular/core'
   templateUrl: './courses.component.html',
   styleUrl: './courses.component.scss',
 })
-export class CoursesComponent {}
+export class CoursesComponent {
+  portalName: string = 'Cursos do Leo'
+  courses: string[] = ['JavaScript', 'Node.js', 'ReactJS']
+}
