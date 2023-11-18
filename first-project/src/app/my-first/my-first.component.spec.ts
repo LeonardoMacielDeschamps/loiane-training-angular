@@ -1,22 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { MyFirstComponent } from './my-first.component';
+import { MyFirstComponent } from './my-first.component'
 
 describe('MyFirstComponent', () => {
-  let component: MyFirstComponent;
-  let fixture: ComponentFixture<MyFirstComponent>;
+  let component: MyFirstComponent
+  let fixture: ComponentFixture<MyFirstComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [MyFirstComponent],
-    }).compileComponents();
+    }).compileComponents()
 
-    fixture = TestBed.createComponent(MyFirstComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(MyFirstComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

@@ -31,6 +31,17 @@
             "prefix": "app",
             "style": "kebab-case"
           }
+        ],
+        "prettier/prettier": [
+          "error",
+          {
+            "printWidth": 80,
+            "tabWidth": 2,
+            "singleQuote": true,
+            "trailingComma": "all",
+            "arrowParens": "always",
+            "semi": false
+          }
         ]
       }
     },
@@ -42,20 +53,7 @@
         "plugin:@angular-eslint/template/recommended",
         "plugin:@angular-eslint/template/accessibility"
       ],
-      "rules": {
-        "prettier/prettier": [
-          "error",
-          {
-            "printWidth": 80,
-            "tabWidth": 2,
-            "singleQuote": true,
-            "trailingComma": "all",
-            "arrowParens": "always",
-            "semi": false
-          }
-        ],
-        "dot-notation": "off"
-      }
+      "rules": {}
     }
   ]
 }
