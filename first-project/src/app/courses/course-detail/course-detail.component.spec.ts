@@ -8,10 +8,9 @@ describe('CourseDetailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CourseDetailComponent]
-    })
-    .compileComponents();
-    
+      declarations: [CourseDetailComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CourseDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -5,15 +5,8 @@ import { CoursesComponent } from './courses.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 
 @NgModule({
-  declarations: [
-    CoursesComponent,
-    CourseDetailComponent,
-  ],
-  imports: [
-    CommonModule,
-  ],
-  exports: [
-    CoursesComponent,
-  ],
+  declarations: [CoursesComponent, CourseDetailComponent],
+  imports: [CommonModule],
+  exports: [CoursesComponent],
 })
-export class CoursesModule { }
+export class CoursesModule {}
