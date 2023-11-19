@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { CoursesService } from './courses.service'
 
 @Component({
   selector: 'app-courses',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core'
 })
 export class CoursesComponent {
   portalName: string = 'Cursos do Leo'
-  courses: string[] = ['JavaScript', 'Node.js', 'ReactJS']
+  courses: string[]
+
+  constructor(private readonly coursesService: CoursesService) {
+    this.courses = this.coursesService.getCourses()
+  }
 }
