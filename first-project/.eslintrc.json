@@ -1,7 +1,8 @@
 {
   "root": true,
   "ignorePatterns": [
-    "projects/**/*"
+    "projects/**/*",
+    "**/index.html"
   ],
   "overrides": [
     {
@@ -47,11 +48,13 @@
     },
     {
       "files": [
-        "*.html"
+        "*.html",
+        "*.scss"
       ],
       "extends": [
         "plugin:@angular-eslint/template/recommended",
-        "plugin:@angular-eslint/template/accessibility"
+        "plugin:@angular-eslint/template/accessibility",
+        "plugin:prettier/recommended"
       ],
       "rules": {}
     }
