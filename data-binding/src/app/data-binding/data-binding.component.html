@@ -1,4 +1,4 @@
-<section>
+<!-- <section class="data-binding">
   <article>
     <h3>Interpolation / Interpolação</h3>
     <p>Renderização de string com interpolação: {{ url }}</p>
@@ -38,6 +38,45 @@
       >
         Esse alerta somente será apresentado em caso de erro
       </ngb-alert>
+    </div>
+  </article>
+</section> -->
+
+<section class="event-binding">
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button (click)="onClickButton()" class="btn btn-primary">
+        Clique-me
+      </button>
+
+      <br />
+      <br />
+
+      <input
+        type="text"
+        (keyup)="setInputValue($event)"
+        (keydown)="setInputValue($event)"
+        (keypress)="setInputValue($event)"
+        (keyup.enter)="saveInputValue(inputField.value)"
+        (blur)="saveInputValue(inputField.value)"
+        #inputField
+      />
+
+      <p>Valor atual: {{ inputValue }}</p>
+      <p>Valor salvo: {{ savedInputValue }}</p>
+
+      <br />
+
+      <span
+        (mouseover)="onMouseOverOut()"
+        (mouseout)="onMouseOverOut()"
+        (focus)="(0)"
+        (blur)="(0)"
+        [class.highlight]="isMouseOver"
+      >
+        Passe o mouse sobre mim
+      </span>
     </div>
   </article>
 </section>
